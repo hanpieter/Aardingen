@@ -1,0 +1,638 @@
+/* ==========================================================================
+   FlowFabric Mendix 5 mxui - Desktop
+   CSS version: 0.1
+   Mendix version: 5.3.2
+   ========================================================================== */
+
+.mx-datagrid input, 
+.mx-datagrid select, 
+.mx-datagrid textarea,
+.form-control {
+	height: 30px;
+	font-size: inherit;
+	padding: 6px 8px;
+}
+.mx-fileinput .mx-wrapped-input {
+	cursor: pointer;
+}
+.alert {
+	padding: 8px;
+}
+:focus {
+	outline: none; /* disable standard browser outline for focused elements */
+}
+
+
+
+/* ==========================================================================
+   Default Login Modal
+   ========================================================================== */
+.mx-login .modal-body {
+	padding: 0 15px;
+}
+.mx-login .modal-content input {
+	font-size: larger;
+	height: 56px;
+	padding: 12px 12px;
+	border: 1px solid #EEE;
+	background: #eee;
+	box-shadow: none;
+}
+.mx-login .modal-content input:focus {
+	border-color: #66afe9;
+}
+.mx-login .modal-header,
+.mx-login .modal-footer {
+	border-style: none;
+}
+.mx-login button {
+	font-size: middle;
+}
+.mx-login h4 {
+	font-weight: bold;
+	font-size: x-large;
+	color: #000;
+}
+/* Default Modal Underlay
+   ========================================================================== */
+.mx-underlay {
+	
+}
+
+/* ==========================================================================
+   Layout Container
+   ========================================================================== */
+.mx-layoutcontainer-bottom,
+.mx-layoutcontainer-top,
+.mx-layoutcontainer-top .mx-layoutcontainer-left,
+.mx-layoutcontainer-top .mx-layoutcontainer-right,
+.mx-layoutcontainer-top .mx-layoutcontainer-center,
+.mx-layoutcontainer-left,
+.mx-layoutcontainer-right {
+	background: none;
+}
+
+/* .profile-desktop .mx-layoutcontainer-top {
+	padding: 10px;
+} */
+.mx-table th, 
+.mx-table td {
+	padding: 5px;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+   
+.btn {
+
+	border: none;
+	border-radius: 0px;
+}
+.btn>img {
+	display:none;
+}
+.btn {
+	min-width: 120px;
+	font-size: inherit;
+}
+.mx-grid-pagingbar .btn {
+	min-width: 0;
+}
+.btn:active,
+.btn.active{
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.btn-default {
+	color: #36363a;
+	text-shadow: none;
+	border-style: none;
+	border-width: 0px;
+	border-color: #d8d8d8;
+	background: #efefef;
+	box-shadow: none;
+}
+.btn-default:hover,
+.btn-default:focus {
+	color: #36363a;
+	outline: none;
+	background: #e5e5e8;
+}
+.btn-inverse {
+	color: #FFF;
+	border-color: #2d4257;
+	background: #34495e;
+}
+.btn-inverse:hover,
+.btn-inverse:focus {
+	color: #FFF;
+	background: #415b76;
+}
+.btn-primary {
+	color: #FFF;
+	background-color: #e00073;
+	border-color: #B81060;
+	}
+.btn-primary:hover,
+.btn-primary:focus {
+	color: #FFF;
+	background-color: #CA0068;
+}
+.btn-info {
+	color: #FFF;
+	border-color: #329dbf;
+	background-color: #38afd4;
+}
+.btn-info:hover,
+.btn-info:focus {
+	color: #FFF;
+	background-color: #52bfe1;
+}
+.btn-success {
+	color: #FFF;
+	border-color: #26bb65;
+	background: #2ecc71;
+}
+.btn-success:hover,
+.btn-success:focus {
+	color: #FFF;
+	background: #58d68d;
+}
+.btn-warning {
+	color: #FFF;
+	border-color: #d1721e;
+	background-color: #E67E22;	
+}
+.btn-warning:hover,
+.btn-warning:focus {
+	color: #FFF;
+	background-color: #ed984d;
+}
+.btn-danger {
+	color: #FFF;
+	border-color: #c90707;
+	background-color: #d30606;	
+}
+.btn-danger:hover,
+.btn-danger:focus {
+	color: #FFF;
+	background-color: #ec5d5d;
+}
+.btn.disabled, 
+.btn[disabled] {
+	border: none;
+	color: #ccc;
+}
+.mx-dateinput-select-button,
+.mx-listview-clear-button {
+	
+}
+.mx-fileinput .mx-fileinput-upload-button:hover {
+	background: #b9c1d6;
+}
+
+
+/* ==========================================================================
+   Table
+   ========================================================================== */
+.table-bordered {
+	border: none;
+}
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+	border: none;
+}
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+.mx-title {
+	padding: 4px 8px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #34495e;
+}
+
+/* ==========================================================================
+   Grids
+   ========================================================================== */
+.mx-grid {
+	padding: 0px;
+}
+.mx-datagrid table tr th {
+	border-bottom: none;
+	background: #f1f1f1;
+}
+.mx-datagrid .mx-datagrid-body-table .selected td { /* row highlight color */
+	color: #000;
+	background: #bde5cf;
+}
+.mx-dataview .mx-grid {
+	border-radius: 0;
+}
+.mx-window .mx-dataview .mx-grid {
+	border-style: none;
+    padding: 0;
+}
+.mx-page .mx-datagrid .mx-datagrid-foot th {
+	color: #FFF;
+	border-color: #34495E;
+	border-left: none;
+	border-right: none;
+	background-color: #34495E;
+}
+.mx-datagrid-foot td {
+	background: #f7fcfe;
+}
+.mx-dataview-controls {
+	background-color: #f9f9f9;
+}
+.mx-datagrid-head-wrapper {
+	background-color: #cccccc;
+}
+.mx-datagrid-head-caption {
+	font-weight: normal;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th{
+	background-color: transparent;
+}
+.table-striped>tbody>tr:nth-child(even)>td,.table-striped>tbody>tr:nth-child(even)>th{
+	background-color:#efeff2;
+}
+.mx-templategrid-item {
+	border: 0px;
+	padding: 0px;
+}
+.mx-templategrid-item.selected  {
+	color: #fff;
+	background: #3498DB;
+}
+.mx-grid-pagingbar .btn {
+	background: inherit;
+	border: inherit;
+}
+/* ==========================================================================
+   Listview  
+   ========================================================================== */
+   
+ .mx-list > li {
+	padding: 5px; 
+	border: 0px; 
+	border-style: none; 
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.mx-list .selected td {
+	background-color: #df3433;
+	color: #fff;
+}
+.mx-list > li:first-child {
+	border-radius: 0px;
+}
+.mx-list > li:last-child {
+	border-radius: 0px;
+}
+.mx-listview {
+	padding: 0;
+}
+.mx-listview-empty {
+	background: inherit;
+	color: inherit;
+	text-align: left;
+}
+
+/* ==========================================================================
+   Tab Container
+   ========================================================================== */
+.mx-tabcontainer-tabs > li > a {
+	font-weight: bold;
+}
+
+/* ==========================================================================
+   Group Box
+   ========================================================================== */
+.mx-groupbox-body,
+.mx-listview {
+	padding: 0px;
+}
+.mx-groupbox-header {
+	font-weight: bold;
+	color: #FFF;
+	background: #34495e;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+/* Navigation Bar
+========================================================================== */
+.mx-navbar {
+	margin-bottom: 0;
+	background: none;
+	box-shadow: none;
+	border-style: none;
+}
+.navbar-nav>li>a {
+	padding: 5px 10px;
+}
+.mx-navbar .nav > .mx-navbar-item > a {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	line-height: 45px;
+	text-transform: uppercase;
+	padding: 0 15px;
+	margin: 0;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	border: 0;
+	color: #696a6c;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.nav-tabs>li>a:hover {
+	background-color: #696a6c;
+	color: #fff;
+	border: 0;
+}
+.mx-navbar .nav > .mx-navbar-item > a:hover,
+.mx-navbar .nav > .mx-navbar-item > a:focus {
+	background-color: #696a6c;
+	color: #fff;
+	border: 0;
+}
+.mx-navbar .nav li.dropdown.open > .dropdown-toggle, 
+.mx-navbar .nav li.dropdown.active > .dropdown-toggle, 
+.mx-navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	background-color: #EFEFEF;
+	color: #e00073;
+	border: 0;
+}
+
+/* Dropdown */
+.mx-navbar .mx-navbar-item .mx-navbar-submenu:before {
+	content: "";
+	border-style: solid;
+	border-width: 0 9px 9px 9px;
+	border-color: transparent transparent #34495e transparent;
+	height: 0;
+	position: absolute;
+	left: 15px;
+	top: -9px;
+	width: 0;
+	-webkit-transform: rotate(360deg);
+}
+.mx-navbar .mx-navbar-item .mx-navbar-submenu {
+	padding: 5px;
+	border-style: none;
+	background-color: #34495e;
+	box-shadow: none;
+}
+.mx-navbar .mx-navbar-item .mx-navbar-submenu .mx-navbar-subitem a {
+	color: #FFF;
+}
+.mx-navbar .mx-navbar-item .mx-navbar-submenu .mx-navbar-subitem a:hover,
+.mx-navbar .mx-navbar-item .mx-navbar-submenu .mx-navbar-subitem a:focus {
+	color: #FFF;
+	background-color: #3498DB;
+}
+
+/* Navigation Tree
+========================================================================== */
+.mx-navigationtree a {
+	display: block;
+	padding: 5px 10px;
+}
+.mx-navigationtree a:hover,
+.mx-navigationtree a:focus {
+	color: #FFF;
+	text-shadow: none;
+	background: #3498DB;
+}
+.mx-navigationtree li {
+	padding: 5px 0;
+	border-bottom: 1px solid #dfe6ea;
+}
+.mx-navigationtree ul {
+	margin: 0;
+	padding: 0;
+}
+.mx-navigationtree ul li ul {
+	padding: 0;
+	margin-left: 10px;
+}
+.mx-navigationtree ul li ul li {
+	padding-left: 0;
+	margin-left: 0;
+}
+.mx-navigationtree .mx-navigationtree-has-items > a {
+	font-weight: normal;
+}
+.mx-navigationtree .mx-navigationtree-has-items ul li:last-child {
+	border-style: none;
+}
+
+/* Simple Menu Bar
+========================================================================== */
+.mx-menubar {
+	padding: 0;
+	border-top: 1px solid #e5e5e5;
+	background: #FFF;
+}
+.mx-menubar li {
+	border-right: 1px solid #e5e5e5;
+}
+.mx-menubar li a {
+	font-weight: bold;
+}
+.mx-menubar-horizontal li a img {
+	display: block;
+	margin: auto auto 5px auto;
+}
+
+/* SidebarToggle
+========================================================================== */
+.sidebar {
+	background: #222;
+}
+.sidebar .mx-menubar {
+	border-style: none;
+	background: #222;
+}
+.sidebar .mx-menubar-vertical .mx-menubar-item {
+	padding: 0;
+	margin: 0;
+	border-width: 0 0 1px 0;
+	border-color: #666;
+	border-style: solid;
+	background: none;
+}
+.sidebar .mx-menubar-vertical .mx-menubar-item img {
+	display: inline;
+	margin: auto 5px 3px auto;
+}
+.sidebar .mx-menubar-vertical .mx-menubar-item a {
+	padding: 16px 10px 16px 10px;
+	color: #FFF;
+}
+.sidebar .mx-menubar-vertical .mx-menubar-item a:hover, 
+.sidebar .mx-menubar-vertical .mx-menubar-item a:focus {
+	background-color: #343434;
+}
+
+/* ==========================================================================
+   Dijit Widgets
+   ========================================================================== */
+
+/* Calendar
+========================================================================== */
+.dijitCalendarContainer {
+	background-color: #eff0f2;
+}
+.dijitCalendarContainer tr th,
+.dijitCalendarContainer tr td {
+	padding: 6px;
+	text-align: center;
+}
+.dijitCalendarContainer tr th {
+	text-align: center;
+	color: #FFF;
+	background-color: #34495e;
+}
+.dijitCalendarContainer tr .dijitCalendarArrow {
+	cursor: pointer;
+}
+.dijitCalendarMonthLabel {
+	font-weight: bold;
+}
+.dijitCalendarContainer .dijitCalendarMonthContainer th:first-child,
+.dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:last-child {
+	border-top-left-radius: 3px;
+}
+.dijitCalendarContainer .dijitCalendarMonthContainer th:last-child,
+.dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:first-child {
+	border-top-right-radius: 3px;
+}
+.dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:first-child {
+	border-top-left-radius: 0;
+}
+.dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:last-child {
+	border-top-right-radius: 0;
+}
+.dijitCalendarContainer .dijitButtonNode {
+	border-style: none;
+}
+.dijitCalendarSelectedDate,
+.dijitCalendarSelectedDate:hover {
+	color: #FFF;
+	background: #3498DB;
+	border-radius: 10px;
+}
+.dijitCalendarHoveredDate,
+.dijitCalendarPreviousYearHover,
+.dijitCalendarNextYearHover,
+.dijitCalendarMonthLabelHover {
+	background-color: #dbdcdd;
+	border-radius: 10px;
+}
+.dijitCalendarYearContainer td {
+	font-weight: bold;
+	border-top: 1px solid #dbdcdd;
+	text-align: center;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.dijitCalendarContainer tfoot h3 {
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+}
+
+/* Tooltip
+========================================================================== */
+.dijitTooltipContainer {
+	border-width: 1px;
+	border-color: #34495e;
+	background: #FFF;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}
+.mx-tooltip-content {
+	padding: 5px;
+}
+.dijitTooltipConnector {
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-right-color: #34495e;
+	border-width: 10px 10px 10px 0;
+	margin-left:-10px;
+}
+
+/* Split Container
+========================================================================== */
+.dijitBorderContainer {
+    background-color: #fcfcfc;
+     padding: 5px;
+}
+.dijitSplitContainer-child, 
+.dijitBorderContainer-child {
+    border: 1px #ccc solid;
+}
+.dijitBorderContainer-dijitTabContainerTop, 
+.dijitBorderContainer-dijitTabContainerBottom, 
+.dijitBorderContainer-dijitTabContainerLeft,
+.dijitBorderContainer-dijitTabContainerRight {
+    border:  none;
+}
+.dijitBorderContainer-dijitBorderContainer {
+    border:  none;
+     padding:  0;
+}
+.dijitSplitterH, .tundra .dijitGutterH {
+	background: #fcfcfc;
+	border: 0;
+	height: 5px;
+}
+.dijitSplitterH .dijitSplitterThumb {
+	background: #B0B0B0 none;
+	height: 1px;
+	top: 2px;
+	width: 19px;
+}
+.dijitSplitterV,
+.dijitGutterV {
+	background: #fcfcfc;
+	border: 0;
+	width: 5px;
+}
+.dijitSplitterV .dijitSplitterThumb {
+	background: #B0B0B0 none;
+	height: 19px;
+	left: 2px;
+	width: 1px;
+}
+.dijitSplitterActive {
+	font-size: 1px;
+	background-image: none;
+	background-color: #aaa;
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	filter: Alpha(Opacity=60);
+	margin: 0;
+}
+.dijitSplitContainer-dijitContentPane,
+.dijitBorderContainer-dijitContentPane {
+	background-color: #fff;
+	padding: 5px;
+}
